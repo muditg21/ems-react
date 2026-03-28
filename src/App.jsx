@@ -1,9 +1,13 @@
 import React from 'react'
-import Login from './components/Auth/Login'
+import Employee from './components/DashBoard/Employee'
+//import Login from './components/Auth/Login'
+
+
 const App = () => {
   return (
     <>
-      <Login />
+      {/* <Login /> */}
+       < Employee />
     </>
   )
 }
