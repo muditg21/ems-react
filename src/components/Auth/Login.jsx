@@ -15,7 +15,8 @@ const Login = () => {
     
   return (
     <div className='bg-black h-screen w-screen flex justify-center items-center'  >
-      <div className='border-2 border-red-400 px-10 py-20'>
+      <div className='border-2 border-red-400 px-10 py-8'>
+        <h1 className="text-3xl text-white flex item-centre justify-center mb-20">Login</h1>
          <form 
             onSubmit={(e)=>{
                 submitHandler(e)
@@ -26,14 +27,14 @@ const Login = () => {
               onChange={(e)=>{
                 setEmail(e.target.value)
               }} 
-              required className='border-3 border-red-400 bg-amber-200 px-5 py-2 rounded-2xl text-black' type="email" placeholder='email' />
+              required className='border-3 border-amber-800 bg-amber-300 px-5 py-2 rounded-2xl outline-none text-black' type="email" placeholder='email' />
               <input 
               value={password}
               onChange={(e)=>{
                 setPassword(e.target.value)
               }}
-              required className='border-3 border-red-400 bg-amber-200 px-5 py-2 rounded-2xl text-black' type="password" placeholder='password' />
-              <button className='bg-red-400 text-amber-200 px-7 py-2 rounded-full'>Submit</button>
+              required className='border-3 border-amber-800 bg-amber-300 px-5 py-2 rounded-2xl outline-none text-black' type="password" placeholder='password' />
+              <button className='bg-red-400 text-white px-7 py-2 rounded-full'>Submit</button>
          </form>
       </div>
     </div>
